@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.left{
+    /* min-height: 100vh; */
+    height: 100vh;
+    width: 45vw;
+    background-color: azure;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left form{
+    display: flex;
+    flex-direction: column;
+}
+
+.left form button{
+    margin: 10px;
+    height: 6vh;
+    width: 10vw;
+    border-radius: 20px;
+    border: none;
+    font: message-box;
+    color :rgb(144, 64, 206);
+}
+
+.left form button:hover{
+    border: none;
+    box-shadow: 1px 1px 10px rgb(144, 64, 206) ;
+    transition: all .5s ease;
+}
+
+.left .inputs{
+    width: 30vw;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left .inputs textarea{
+    height: 50vh;
+    width: 25vw;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px dashed black;
+}
+
+.left .inputs textarea:focus{
+    box-shadow: 1px 1px 10px rgb(144, 64, 206) ;
+    transition: all .5s ease;
+    outline: none;
+    border: none;
+    transition: all .5s ease;
+}
+
+.left .inputs textarea:hover{
+    box-shadow: 1px 1px 10px rgb(201, 135, 251) ;
+    transition: all .5s ease;
+    outline: none;
+    border: none;
+    transition: all .5s ease;
+}
+
+.left .inputs #color{
+    margin-left: 5px;
+}
+
+
+.right{
+    /* min-height: 100vh; */
+    height: 100vh;
+    width: 55vw;
+    padding: 10px;
+    background-color: rgb(144, 64, 206);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-head{
+    display: flex;
+    align-items: center;
+}
+
+.right-head .undo-btn{
+    height: 25px;
+    width: 45px;
+    padding: 4px;
+    position: absolute;
+    right: 10px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-head .undo-btn:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 20px white;
+}
+
+
+.right h1{
+    color: whitesmoke;
+}
+
+.right .notesContainer{
+    width: 100%;
+    margin: 5px 0;
+    padding: 4px ;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.notes{
+    height: 15vh;
+    width: 10vw;
+    padding: 4px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 2px ;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timestamp{
+    font-size: 10px;
+    position: absolute;
+    bottom: 2px;
+    left: 1px;
+}
+
+.close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 1px;
+    height: 14px;
+    width: 14px;
+    margin: 1px;
+    background-color: black;
+    color: white;
+}

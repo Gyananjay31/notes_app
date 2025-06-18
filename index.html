@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes taking app - 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <form action="">
+                <div class="inputs">
+                    <textarea name="" id="textarea" placeholder="Start typing..."></textarea>
+                    <input id="color" type="color" title="color" value="#f5ebf5"/>
+                </div>
+                <button type="submit" id="submit">Add Note</button>
+            </form>
+        </div>
+        <div class="right">
+            <div class="right-head">
+                <h1>Added Notes</h1>
+                <button class="undo-btn">UNDO</button>
+            </div>
+            <div class="notesContainer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
